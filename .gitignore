@@ -71,3 +71,5 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .idea/
+lib/algs4/algs4-data/*
+!lib/algs4/algs4-data/*UF.txt
