@@ -74,3 +74,4 @@ fabric.properties
 lib/algs4/algs4-data/*
 !lib/algs4/algs4-data/*UF.txt
 DSA.iml
+*.class
