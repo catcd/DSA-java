@@ -26,26 +26,4 @@ public class ClosestNumbers {
 
         return result.stream().mapToInt(Integer::intValue).toArray();
     }
-
-
-
-    static int[] closestNumbers2(int[] arr) {
-        Arrays.sort(arr);
-        int[] tmp = new int[arr.length * 2];
-        int c = 0;
-        int val = arr[1] - arr[0];
-        for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i+1] - arr[i] < val) val = arr[i+1] - arr[i];
-        }
-        for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i+1] - arr[i] == val) {
-                tmp[c] = arr[i];
-                tmp[c+1] = arr[i+1];
-                c += 2;
-
-            }
-        }
-        int[] ans = Arrays.copyOf(tmp, c);
-        return ans;
-    }
 }

@@ -1,5 +1,6 @@
 package complexity;
 
+// 1 2 5 3 7 8 6 4
 public class NewYearChaos {
     static void minimumBribes(int[] q) {
         int swaps = 0, min = q.length;
