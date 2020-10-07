@@ -29,7 +29,7 @@ public class TwoStacksQueueNoTimeLimit {
     public static class MyQueue<T> {
         Stack<T> stack1 = new Stack<>();
         Stack<T> stack2 = new Stack<>();
-//        T font;
+//        T front;
 
         public void enqueue(T num) {
 //            if (stack1.empty()) {

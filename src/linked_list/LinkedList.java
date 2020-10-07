@@ -58,10 +58,12 @@ public class LinkedList<T> {
             head = head.next;
         } else {
             Node<T> prev = head;
-            while (prev.next.data != key) {
+            while (prev.next != null && prev.next.data != key) {
                 prev = prev.next;
             }
-            prev.next = prev.next.next;
+            if (prev.next != null) {
+                prev.next = prev.next.next;
+            }
         }
 
         return this;
